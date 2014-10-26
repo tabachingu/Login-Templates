@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Login Three</title>
+		<link href="css\main.css" rel="stylesheet" type="text/css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		<div class="container">    
+      <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">              
+        <div class="panel panel-info" style="border-color: #999" >
+          <div class="panel-heading" style="background: #999; color:white">
+            <div class="panel-title">Sign In</div>
+          </div>     
+
+          <div style="padding-top:30px" class="panel-body" >
+            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+            <form id="loginform" class="form-horizontal" role="form" action="demo_from.asp">
+            <center>
+              <div style="margin-bottom: 25px">
+                <img src="imgs\LoL-logo.png" width="50%" style="float:center; margin-bottom:25px">
+                <div style="margin-bottom: 25px" class="input-group">
+                  <span class="input-group-addon" ><i class="glyphicon glyphicon-user" ></i></span>
+                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email" required style="width:172px">                       
+                                    
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
+                  <input id="login-password" type="password" class="form-control" name="password" placeholder="password" required style="width:171px">
+                               
+                  <div class="col-sm-4 controls">
+                    <a id="btn-login" href="#" class="btn btn-success" style="float:right; margin-right:-5px">Login  </a>
+                  </div>
+                </div>          
+                  <div class="input-group" style="float:left; margin-top: -20px">
+                    <div class="checkbox">
+                      <label>
+                        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                      </label>
+
+                    </div>
+                  </div>
+                <div style="font-size: 80%; margin-top: -10px; float: right; margin-right:13px"><a href="#">Forgot password?</a></div>   
+              </div>
+            </center> 
+              <center>
+              <div class="col-sm-12 controls" style="margin-left:-15px; margin-bottom:5px; margin-top:10px">
+                <a id="btn-fblogin" href="#" class="btn btn-primary">Facebook</a>
+                <a id="btn-fblogin" href="#" class="btn" style="background:#d34836; color: white">Google+</a>
+                <a id="btn-fblogin" href="#" class="btn" style="background:#1dcaff; color: white">Twitter</a>
+              </div>
+              </center>
+            </form>
+          </div>
+        </div>                
+      </div> 
+    </div>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
